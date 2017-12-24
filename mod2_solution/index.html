@@ -1,30 +1,108 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html>
 <head>
-	<title>Assignment Solution for Module 2</title>
-	<style>
-	#p1 {
-		background-color: grey
+<meta charset="utf-8">
+<title>Our Menu</title>
+<style>
+* {
+  box-sizing: border-box;
+}
 
-	}
-	#p2 {
-		background-color: grey
-		
-	}
-	#p3 {
-		background-color: grey
-		
-	}
+
+div {
+  background-color: grey;
+  border: 1px solid black;
+  width: 28%;
+  height: 200;
+  margin-right: 5%;
+  position:relative;
+  padding:0;
+  margin-bottom: 20px;
+  padding-left: 10px;
+
+}
+
+h1 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+p{
+	background-color: red;
+	height:33%;
+  width:33%;
+	bottom:0;
+	margin:0;
+	float:right;
+  border: 1px solid black;
+  padding:15px;
+  text-align: center;
+  font-size: 25px;
+}
+
+#p1{
+  background-color: #ff8093;
+}
+
+#p2{
+  background-color: #ff0093;
+}
+
+#p3{
+  background-color: #ff0000;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  div {
+    width: 28%;
+    float:left;
+    margin: 2%;
+  }
+}
+
+
+/********** Small devices only **********/
+@media (max-width: 767px){
+  div {
+    width: 98%;
+    margin-left: 2%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	#d1 {
+    width: 45%;
+    float: right;
+    margin: 2%;
+  }
+
+  #d2 {
+  	width: 45%;
+    float: right;
+    margin: 2%;
+
+  }
+
+  #d3{
+  	width: 96%;
+    clear: right;
+    margin-left: 2%;
+  }
+
+
+}
+
 </style>
 </head>
 <body>
 
-	<p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porta accumsan elit, mollis ultrices felis tristique vitae. Donec at nibh nunc. Cras accumsan tellus in ligula eleifend, vel scelerisque odio mollis. Vestibulum ullamcorper at lorem at ornare. Vivamus condimentum cursus arcu, id rhoncus orci laoreet ac. Nullam vulputate felis ac rhoncus consequat.</p1>
-<div>
-	<p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porta accumsan elit, mollis ultrices felis tristique vitae. Donec at nibh nunc. Cras accumsan tellus in ligula eleifend, vel scelerisque odio mollis. Vestibulum ullamcorper at lorem at ornare. Vivamus condimentum cursus arcu, id rhoncus orci laoreet ac. Nullam vulputate felis ac rhoncus consequat.</p2>
-</div>
-	<p3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porta accumsan elit, mollis ultrices felis tristique vitae. Donec at nibh nunc. Cras accumsan tellus in ligula eleifend, vel scelerisque odio mollis. Vestibulum ullamcorper at lorem at ornare. Vivamus condimentum cursus arcu, id rhoncus orci laoreet ac. Nullam vulputate felis ac rhoncus consequat.</p3>
+<h1>Our Menu</h1>
 
+  <div id="d1"><p id="p1">Pasta</p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar risus in arcu dapibus, id interdum ipsum laoreet. Phasellus euismod dolor sit amet turpis cursus consectetur pretium sed velit. Vestibulum ex ante, fermentum ut dignissim ut, ultricies quis arcu. Proin ligula nisl, elementum ac ex vitae, bibendum elementum ex. </div>
+  <div id="d2"><p id="p2">Soup</p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar risus in arcu dapibus, id interdum ipsum laoreet. Phasellus euismod dolor sit amet turpis cursus consectetur pretium sed velit. Vestibulum ex ante, fermentum ut dignissim ut, ultricies quis arcu. Proin ligula nisl, elementum ac ex vitae, bibendum elementum ex. </div>
+  <div id="d3"><p id="p3">Salad</p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar risus in arcu dapibus, id interdum ipsum laoreet. Phasellus euismod dolor sit amet turpis cursus consectetur pretium sed velit. Vestibulum ex ante, fermentum ut dignissim ut, ultricies quis arcu. Proin ligula nisl, elementum ac ex vitae, bibendum elementum ex. </div>
 
 </body>
 </html>
